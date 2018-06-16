@@ -246,22 +246,27 @@ body {
     margin: 0;
   }
 }
+.slick-prev {
+  background-image: url(../img/arrow-left.svg);
+}
+.slick-next {
+  background-image: url(../img/arrow-right.svg);
+  right: 3px !important;
+}
 .slick-next,
 .slick-prev {
   position: absolute;
   top: 45%;
-  margin-left: 3px;
-  transform: rotate(180deg);
   display: inline-block;
   height: 18px;
   width: 18px;
   padding: 15px;
+  margin-left: 3px;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   -webkit-box-sizing: content-box;
   border-radius: 5px;
   border-width: 0;
-  background-image: url(../img/arrow-right.svg);
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
@@ -274,10 +279,6 @@ body {
 .slick-next:focus,
 .slick-prev:focus {
   outline: none;
-}
-.slick-next {
-  transform: rotate(0);
-  right: 3px !important;
 }
 .slick-dots {
   display: flex;
